@@ -1,5 +1,5 @@
 
-local FONTSIZE=96
+local FONTSIZE=256
 -- used my love2d for ttf font
 local myFont = nil
 
