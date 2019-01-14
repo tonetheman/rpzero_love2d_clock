@@ -32,7 +32,7 @@ end
 function love.draw()
 	-- format the string for the screen
 	-- %02d is zero filled 2 places
-	ts = string.format("%02d:%2d:%02d", t.hour,t.min,t.sec)
+	ts = string.format("%02d:%02d:%02d", t.hour,t.min,t.sec)
 
 	-- determine the width and height of the string
 	-- so we can center it
