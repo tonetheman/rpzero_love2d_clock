@@ -22,6 +22,8 @@ function love.load()
 	love.graphics.setFont(myFont)
 	-- this is blue (rgb) 
 	love.graphics.setColor(0,0,255)
+
+	love.mouse.setVisible(false)
 end
 
 function love.update()
