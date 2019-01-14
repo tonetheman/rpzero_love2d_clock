@@ -11,3 +11,6 @@ love .
 sudo apt-get install love
 
 uses this font: https://www.dafont.com/alarm-clock.font
+
+What it looks like (in a window)
+![screenshot](screenshot.png)
