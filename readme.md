@@ -3,7 +3,11 @@
 
 Uses love2d
 
-To run: love .
+To run:
+cd <DIRECTORY YOU INSTALLED THE CODE>
+love .
 
 ## dependencies
 sudo apt-get install love
+
+uses this font: https://www.dafont.com/alarm-clock.font
