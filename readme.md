@@ -1,6 +1,10 @@
 
 # simple digital clock for raspberrypi zero
 
+
+Changes
+2019-01-15 - added a branch for an 800x480 resolution. Includes a fudge factor to make it fit nicer.
+
 Uses love2d
 
 To run:
