@@ -1,5 +1,5 @@
 
-local FONTSIZE=256
+local FONTSIZE=196
 -- used my love2d for ttf font
 local myFont = nil
 
@@ -9,11 +9,16 @@ local t = nil
 -- width and height of the window
 local w = nil
 local h = nil
+local w_half = nil
+local h_half = nil
+local x_fudge_left = 25 -- amount we fudge the string over when we draw
 
 function love.load()
 	-- save off the width and height for use later
 	w = love.graphics.getWidth()
 	h = love.graphics.getHeight()
+	w_half = w/2
+	h_half = h/2
 
 	-- load the ttf from the disk
 	myFont = love.graphics.newFont("alarm_clock.ttf",FONTSIZE)
@@ -40,7 +45,8 @@ function love.draw()
 	-- so we can center it
 	local tw = myFont:getWidth(ts)
 	local th = myFont:getHeight(ts)
+	-- print("tw/th: " .. tw .. " " .. th)
 
 	-- draw it
-	love.graphics.print(ts,w/2-(tw/2),h/2-(th/2))
+	love.graphics.print(ts,w_half-(tw/2)-x_fudge_left,h_half-(th/2))
 end
