@@ -1,5 +1,5 @@
 
-local FONTSIZE=196
+local FONTSIZE=180
 -- used my love2d for ttf font
 local myFont = nil
 
@@ -11,7 +11,7 @@ local w = nil
 local h = nil
 local w_half = nil
 local h_half = nil
-local x_fudge_left = 25 -- amount we fudge the string over when we draw
+local x_fudge_left = 0 -- amount we fudge the string over when we draw
 
 function love.load()
 	-- save off the width and height for use later
